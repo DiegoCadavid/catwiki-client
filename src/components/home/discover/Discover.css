@@ -1,0 +1,163 @@
+.discover {
+
+    background: #E3E1DC;
+    padding: 0px 108px;
+    padding-top: 42px;
+
+    border-radius: 0px 0px 46px 46px;
+}
+
+.discover>h4 {
+    color: #291507;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.discover__slogan {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.discover__slogan>h2 {
+    margin-top: 36px;
+
+    color: #291507;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.discover__slogan>a {
+    align-self: flex-end;
+}
+
+.discover__slogan>a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+
+    text-align: right;
+    color: rgba(41, 21, 7, 0.6);
+
+    /* Aling icon */
+    display: flex;
+    align-items: center;
+}
+
+.discover__slogan>a:hover {
+    color: rgba(41, 21, 7, 1);
+    transition: color 0.3s 0s ease;
+}
+
+/* Discover image loading */
+.discover__image_container_loading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Discover image */
+
+.discover__image_container {
+    padding-top: 46px;
+    padding-bottom: 98px;
+    width: 100%;
+    
+    display: grid;
+    overflow-x: auto;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.discover__image_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+    opacity: .8;
+    transition: opacity .3s ease;
+}
+
+.discover__image_item:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.discover__image_item p {
+    
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #291507;
+    
+
+}
+
+.discover__image_item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* Medium  */
+@media only screen and (max-width: 1248px) {
+
+    .discover {
+        padding: 18px 30px;
+    }
+
+    .discover__slogan {
+        flex-direction: column;
+    }
+
+    .discover__slogan>h2 {
+        margin-top: 36px;
+        line-height: 48px;
+    }
+
+    .discover__image_item img{
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .discover {
+        padding: 18px 29px;
+    }
+
+
+    .discover__slogan>h2 {
+        margin-top: 17px;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .discover__slogan>a {
+        margin-top: 10px;
+        align-self: flex-start;
+        font-size: 15px;
+    }
+
+    .discover__image_container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 18px;
+    }
+
+}

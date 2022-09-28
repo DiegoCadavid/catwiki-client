@@ -1,0 +1,89 @@
+/* Modal for Search input modal */
+
+.search__modal_background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.37);
+    /* backdrop-filter: blur(6.7px); */
+}
+
+
+.Search__modal {
+    position: fixed;
+    padding: 18px;
+
+    background-color: #FFF;
+    border-radius: 0px 0px 12px 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.3);
+
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Search__modal>button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 39px;
+    align-self: flex-end;
+
+    /* Icon center */
+    background-image: url(../../../assets/closeIconButton.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.Search__modal>input[type='text'] {
+    height: 45px;
+    border: 59px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 59px;
+    padding: 10px 20px;
+
+    /* Text */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #291507;
+
+    /* Icon */
+    background-image: url(../../../assets/searchIcon.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 24px;
+}
+
+.Search__modal>input[type='text']:focus {
+    outline: none;
+}
+
+.search__modal_items_container {
+    margin-top: 37px;
+}
+
+.search__modal_items_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.search__modal_items_container > a {
+    width: 100%;
+}

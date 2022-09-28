@@ -1,0 +1,154 @@
+.cat__info {
+    display: flex;
+    padding: 0px 40px;
+}
+
+.cat__info img {
+    width: 300px;
+    height: 300px;
+    margin-right: 115px;
+    object-fit: cover;
+    border-radius: 24px;
+
+    box-shadow: -40px 4px 0px -17px #DEC68B;
+}
+
+
+.cat__bio h4 {
+    color: #291507;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.cat__bio>p {
+
+    margin-top: 25px;
+    color: #291507;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cat__bio ul {
+    list-style: none;
+}
+
+.cat__bio ul li {
+    margin: 32px 0px;
+
+    color: #000000;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cat__bio ul li>span {
+    display: inline-block;
+    width: 60px;
+    height: 12px;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+.cat__bio ul li>span[check='true'] {
+    background: #544439;
+}
+
+.cat__bio ul li>span[check='false'] {
+    background: #E0E0E0;
+}
+
+
+.cat__other_photos h4 {
+    color: #291507;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px; 
+    margin-bottom: 40px;   
+}
+
+.cat__other_photos_container {
+    display: grid;
+    margin-bottom: 156px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 46px;
+}
+
+.cat__other_photos_container img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+
+.cat__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1248px) {
+
+    .cat__info img {
+       margin-right: 30px;
+
+        width: 200px;
+        height: 200px;
+    }
+
+    .cat__bio ul li>span {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cat__info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .cat__info img {
+        margin: 20px 0px 40px 0px;
+
+        width: 200px;
+        height: 200px;
+
+        box-shadow: 0px 30px 0px -17px #DEC68B;
+    }
+
+    .cat__bio h4 {
+        text-align: center;
+    }
+
+    .cat__bio ul li {
+        margin: 20px 0px;
+    }
+
+    .cat__bio ul li>span {
+        width: 30px;
+    }
+    
+    .cat__other_photos {
+        margin-top: 20px;
+    }
+
+    .cat__other_photos h4 {
+        margin-bottom: 10px;
+    }
+
+    .cat__other_photos_container {
+        margin-bottom: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}

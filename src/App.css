@@ -1,0 +1,32 @@
+.app {
+    width: 1248px;
+    min-height: 100vh ;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.line_bottom {
+    display: block;
+    width: 59.18px;
+    height: 3.21px;
+    margin-top: 8px;
+
+    background: #4D270C;
+    border-radius: 77px;
+}
+
+@media only screen and (max-width: 1248px) {
+    .app {
+        width: 100vw;
+        padding: 0px 18px;
+    }
+}
+
+.noscroll {
+    position: fixed;
+    overflow: hidden;
+}

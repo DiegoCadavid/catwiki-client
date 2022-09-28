@@ -1,0 +1,134 @@
+.should_cat {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 108px;
+    height: 490px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.should_cat__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.should_cat__info h4 {
+    margin-top: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.should_cat__info>p {
+    margin-bottom: 65px;
+
+    margin-top: 43px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+.should_cat__images {
+    width: 100%;
+
+    /* Grid  */
+    display: flex;
+    gap: 27px;
+}
+
+.should_cat__images_column {
+    width: 100%;
+    text-align: right;
+}
+
+
+.should_cat__images_column>img {
+    width: 100%;
+}
+
+.should_cat__images_column>img[order="1"] {
+    width: 81.5%;
+    margin-top: 18px;
+}
+
+
+.should_cat__info>a:hover {
+    color: rgba(41, 21, 7, 1);
+    transition: color 0.3s 0s ease;
+}
+
+.should_cat__info>a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+
+    text-align: right;
+    color: rgba(41, 21, 7, 0.6);
+
+    /* Aling icon */
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1248px) {
+
+    .should_cat {
+        margin-top: 65px;
+        margin-bottom: 22.23px;
+        gap: 0;
+    }
+
+    .should_cat__images {
+        align-items: center;
+        flex-grow: 2;
+    }
+
+    .should_cat__info {
+        max-width: 50%;
+    }
+
+    .should_cat__info h4 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .should_cat__info p {
+        margin-bottom: 26px;
+
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .should_cat {
+        margin-top: 63px;
+        margin-bottom: 22.23px;
+        padding: 0px 18px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .should_cat__info {
+        max-width: 100%;
+    }
+
+    .should_cat__images {
+        margin-top: 53px;
+    }
+
+
+}
