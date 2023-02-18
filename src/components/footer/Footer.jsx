@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <img src={icon} alt="icon catwiki" />
-            <p> created by Natalia Cadavid</p>
+            <p> created by Diego Cadavid</p>
         </div>
     )
 }
